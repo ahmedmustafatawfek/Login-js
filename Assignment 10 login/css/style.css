@@ -1,0 +1,143 @@
+body {
+  background-color: #000000;
+  color: wheat;
+}
+.container .head {
+  width: 100%;
+}
+
+.container .box {
+  background-color: #191919;
+  color: whitesmoke;
+  width: 40%;
+  height: 32rem;
+  box-shadow: 0.2rem 0.2rem 1.5rem wheat;
+  border-radius: 5rem;
+}
+
+.container .box i {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .box i:hover {
+  color: purple;
+  transform: scale(1.3);
+}
+
+span.line p {
+  background-color: #191919;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+}
+span.line::after {
+  content: "";
+  display: block;
+  border-bottom: solid 0.1rem whitesmoke;
+  height: 0.1rem;
+  width: 100%;
+}
+
+input.input {
+  background-color: black;
+  border: unset;
+  color: whitesmoke;
+  width: 100%;
+}
+
+input.input:focus {
+  box-shadow: 0.2rem 0.2rem 1.8rem whitesmoke;
+  outline: unset;
+}
+
+.btn {
+  background-color: purple;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: purple;
+  box-shadow: 0.2rem 0.2rem 1.8rem purple;
+}
+
+.links a {
+  color: purple;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: whitesmoke;
+}
+
+a.create-link {
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.log-out {
+  background-color: black;
+  border: 0.1rem solid purple;
+  box-shadow: 0.1rem 0.1rem 1rem purple;
+}
+
+.log-out:hover {
+  background-color: purple;
+  color: whitesmoke;
+  box-shadow: 0.2rem 0.2rem 5rem purple;
+}
+
+nav.navbar {
+  box-shadow: 0.1rem 0.01rem 1rem wheat;
+}
+
+.welcom-box {
+  background-color: black;
+  color: whitesmoke;
+  width: 70%;
+  height: 10rem;
+  box-shadow: 0.1rem 0.1rem 1.5rem wheat;
+  border-radius: 5rem;
+  margin-block: 7rem;
+}
+
+/* span for error validations */
+span#errNameMessage,
+span#errEmailMessage,
+span#errPassMessage {
+  color: purple;
+}
+
+/* login page */
+
+
+
+/* media  */
+
+@media screen and (max-width: 767px) {
+  .container .box {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container .box {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container .box {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container .box {
+    width: 35%;
+  }
+}

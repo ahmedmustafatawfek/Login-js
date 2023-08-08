@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/86e8bfc776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center head pt-2">Login</h1>
+      <div class="box my-4 py-5 px-5 mx-auto">
+        <div class="row">
+          <div class="col-xxl-4 d-flex justify-content-between icons">
+            <a href="https://mail.google.com/"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.apple.com/"
+              ><i class="fa-brands fa-apple"></i
+            ></a>
+          </div>
+          <span class="line position-relative pt-4 pb-1">
+            <p class="position-absolute px-3">Or</p>
+          </span>
+          <!-- FORM -->
+          <form class="pb-2">
+            <label class="d-block py-2">E-mail</label>
+            <input
+              oninput="validationEmail()"
+              type="email"
+              placeholder="Enter Your Mail"
+              id="userEmail"
+              class="rounded py-2 px-3 input"
+            />
+            <span class="d-none" id="errEmailMessage"></span>
+
+            <label class="d-block py-2">Password</label>
+            <input
+              oninput="validationPass()"
+              type="password"
+              placeholder="Enter Your Password"
+              id="userPassword"
+              class="rounded py-2 px-3 input"
+            />
+            <span class="d-none" id="errPassMessage"></span>
+
+            <div class="d-flex remember py-2">
+              <input type="checkbox" class="" />
+              <p class="my-1 mx-2">Remember Me</p>
+            </div>
+
+            <div class="btn d-block" id="logIn">Log In</div>
+          </form>
+
+          <div class="d-flex justify-content-between py-1 links">
+            <span>Forget Your Password? </span>
+            <a href="#">Reset Password</a>
+          </div>
+
+          <a
+            href="./sign-up.html"
+            class="text-center text-decoration-none my-2 create-link"
+            >Create Account?</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/signIn.js"></script>
+  </body>
+</html>

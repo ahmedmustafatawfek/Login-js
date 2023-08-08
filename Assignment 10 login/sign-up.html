@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/86e8bfc776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center head pt-2">SignUp</h1>
+      <div class="box my-4 pb-5 pt-4 px-5 mx-auto">
+        <div class="row">
+          <!-- FORM -->
+          <form>
+            <label class="d-block py-2">Name</label>
+            <input
+              oninput="validationName()"
+              type="name"
+              placeholder="Enter Your Name"
+              id="userName"
+              class="rounded py-2 px-3 input"
+            />
+            <span class="d-none" id="errNameMessage"></span>
+
+            <label class="d-block py-2">E-mail</label>
+            <input
+              oninput="validationEmail()"
+              type="email"
+              placeholder="Enter Your Mail"
+              id="userEmail"
+              class="rounded py-2 px-3 input"
+            />
+            <span class="d-none" id="errEmailMessage"></span>
+
+            <label class="d-block py-2">Password</label>
+            <input
+              oninput="validationPass()"
+              type="password"
+              placeholder="Enter Your Password"
+              id="userPassword"
+              class="rounded py-2 px-3 input"
+            />
+            <span class="d-none" id="errPassMessage"></span>
+
+            <div class="btn d-block my-4" id="signUp">Sign-Up</div>
+            <!--  <a href="./sign-in.html" class="btn d-block my-4" id="signUp">Sign-Up</a> -->
+          </form>
+
+          <a
+            href="/sign-in.html"
+            class="text-center text-decoration-none pb-4 create-link"
+            >Have Account?</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/signUp.js"></script>
+  </body>
+</html>
